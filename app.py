@@ -10,6 +10,7 @@ class Order(pydantic.BaseModel):
     description: str
     client: str
     status: str
+    admin: str = "Не назначен"
 
 basedata = [
     Order(number=1, startDate="2021-01-02", device="Чайник", problemType="технический", description="не кипятит", client="Чайников Чай Чаевич", status="в работе")
